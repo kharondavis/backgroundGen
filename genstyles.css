@@ -26,3 +26,8 @@ h2,
 h3 {
     color: white;
 }
+
+.btn {
+    margin: 15px auto;
+    position: static;
+}

@@ -10,11 +10,16 @@
     </head>
 
     <body id="gradient">
-        <h1>i-Phone Background Generator</h1>
-        <h2>Made by Kharon Davis</h2>
-        <h3>Click buttons to change colors!</h3>
-        <input class="color1" type="color" value="#6666ff">
-        <input class="color2" type="color" value="#009900">
+        <div id="myDIV">
+        <h1 class="text">i-Phone Background Generator</h1>
+        <h2 class="text">Made by Kharon Davis</h2>
+        <h3 class="text">Click buttons to change colors!</h3>
+        <input class="color1 text" type="color" value="#6666ff">
+        <input class="color2 text" type="color" value="#009900">
+        <div class="btn">
+            <button onclick="myFunction()">HIDE TEXT</button>
+            </div>
+        </div>
     </body>
 
     <script>
@@ -29,6 +34,15 @@
         color1.addEventListener("input", Gradient);
 
         color2.addEventListener("input", Gradient)
+
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
 
     </script>
 
